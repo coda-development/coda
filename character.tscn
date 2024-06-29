@@ -1,0 +1,30 @@
+[gd_scene load_steps=2 format=3 uid="uid://btd0cxjtcrgmk"]
+
+[sub_resource type="GDScript" id="GDScript_vp2ul"]
+script/source = "extends Node2D
+
+var strenght
+var agility
+var durability
+var intelligence
+var wisdom
+var charisma
+
+var onBattle = false
+
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(_delta):
+	pass
+"
+
+[node name="Character" type="Node2D"]
+script = SubResource("GDScript_vp2ul")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
